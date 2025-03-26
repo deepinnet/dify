@@ -25,8 +25,9 @@ services:
       timeout: 3s
       retries: 30
 
-  # The redis cache.
-  redis:
+  # The redis cache.注意这个名字，如果是redis，和ragflow在同一台机器上启动的话，会冲突，因为它也叫redis
+  dify-redis:
+    container_name: dify-redis
     image: redis:6-alpine
     restart: always
     environment:
