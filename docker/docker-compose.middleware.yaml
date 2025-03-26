@@ -154,3 +154,10 @@ networks:
   ssrf_proxy_network:
     driver: bridge
     internal: true
+    driver_opts:
+      com.docker.network.driver.mtu: "1430"
+  default:
+    driver: bridge
+    #解决连接不稳定的问题
+    driver_opts:
+      com.docker.network.driver.mtu: "1430"
