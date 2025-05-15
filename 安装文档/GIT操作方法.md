@@ -41,7 +41,7 @@ git commit -m "feat: 我的定制功能"
 git push origin custom-dev
 ```
 
-### **② 定期同步上游更新**
+### **② 定期同步上游更新，或者官方发布重大版本升级，重要Bug修复等情况下**
 ```bash
 # 1. 切换到 main 分支
 git checkout main
